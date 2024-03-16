@@ -1,3 +1,5 @@
+package Class
+
 class Empleado(
     val name: String,
     val firstLastName: String,

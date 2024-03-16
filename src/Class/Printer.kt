@@ -1,3 +1,5 @@
+package Class
+
 class Printer {
 
     fun printMsg(msg: String) {

@@ -1,6 +1,8 @@
-import Cliente
-import Empleado
-import Mudanza
+package Class
+
+import Class.Cliente
+import Class.Empleado
+import Class.Mudanza
 
 class Solicitudes(
     val cliente: Cliente,
@@ -50,8 +52,8 @@ class Solicitudes(
 
     fun getSolicitudesData(): String {
         return "Fecha: $date"
-        "Cliente: $cliente"
-        "Empleado: $empleado"
+        "Class.Cliente: $cliente"
+        "Class.Empleado: $empleado"
         "Dirección: $address"
         "Peso total de la mudanza: $totalPeso"
         "Distancia total de la mudanza: $totalDistance"

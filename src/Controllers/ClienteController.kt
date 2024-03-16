@@ -1,3 +1,8 @@
+package Controllers
+
+import Class.Cliente
+import Class.Printer
+
 class ClienteController (private val printer: Printer){
 
     private val clientList: MutableList<Cliente> = mutableListOf()

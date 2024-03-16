@@ -1,3 +1,11 @@
+package Controllers
+
+import Class.Cliente
+import Class.Empleado
+import Class.Mudanza
+import Class.Printer
+import Class.Solicitudes
+
 class SolicitudesController (private val printer: Printer) {
 
     private val solicitudesList = mutableListOf<Solicitudes>()
@@ -15,7 +23,7 @@ class SolicitudesController (private val printer: Printer) {
         val totalPeso = readln().toDouble()
         printer.printMsg("Distancia de la mudanza en km")
         val totalDistance = readln().toDoubleOrNull() ?: 0.0
-        printer.printMsg("Persona que registro la solicitud") //Empleado que creo la solicitud de mudanza
+        printer.printMsg("Persona que registro la solicitud") //Class.Empleado que creo la solicitud de mudanza
         val nameRegistrador = readln()
 
         val addedSolicitudes = Solicitudes(

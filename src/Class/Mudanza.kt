@@ -1,3 +1,5 @@
+package Class
+
 class Mudanza (
     val peso: Double, //Valor por kg de la mudanza
     val distance: Double,

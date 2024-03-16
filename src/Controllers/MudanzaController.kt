@@ -1,3 +1,8 @@
+package Controllers
+
+import Class.Mudanza
+import Class.Printer
+
 class MudanzaController (private val printer: Printer) {
     private val mudanzaList = mutableListOf<Mudanza>()
 

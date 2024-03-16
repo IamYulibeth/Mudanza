@@ -1,3 +1,7 @@
+package Controllers
+
+import Class.Printer
+
 class MenuController {
     private val printer = Printer()
     private val clienteController = ClienteController(printer)
@@ -8,12 +12,12 @@ class MenuController {
     fun showMenu() {
         printer.apply {
             printMsg("Ingrese una opción")
-            printMsg("1.- Registrar Cliente.")
-            printMsg("2.-Registrar Empleado.")
+            printMsg("1.- Registrar Class.Cliente.")
+            printMsg("2.-Registrar Class.Empleado.")
             printMsg("3.- Crear una solicitud de mudanza.")
             printMsg("4.- Mostrar Clientes.")
             printMsg("5.- Mostrar Empleados.")
-            printMsg("6.- Mostrar Solicitudes de Mudanza.")
+            printMsg("6.- Mostrar Class.Solicitudes de Class.Mudanza.")
 
             val selectedOption = readln().toInt()
             validateOptions(selectedOption)

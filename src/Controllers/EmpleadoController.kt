@@ -1,3 +1,8 @@
+package Controllers
+
+import Class.Empleado
+import Class.Printer
+
 class EmpleadoController (private val printer: Printer) {
     private val empleadoList = mutableListOf<Empleado>()
 
